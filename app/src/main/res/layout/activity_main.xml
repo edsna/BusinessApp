@@ -75,6 +75,24 @@
             android:fontFamily="cursive"
             android:layout_toRightOf="@id/webIcon"
             android:layout_below="@+id/phoneNum"/>
+        <ImageView
+            android:id="@+id/scheduleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sched40"
+            android:paddingLeft="8dp"
+            android:layout_below="@+id/webIcon"/>
+        <TextView
+            android:text="   Open 8AM - 4PM M - F "
+            android:layout_width="match_parent"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedule"
+            android:layout_toRightOf="@id/scheduleIcon"
+            android:layout_below="@+id/myWebsite"/>
+
 
 
 
