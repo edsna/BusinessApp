@@ -1,72 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:text="Aguiar Electronics"
-        android:layout_width="match_parent"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"
-        android:textAlignment="center"
-        android:padding="10dp"
-        android:fontFamily="cursive"
-        android:background="#0000FF"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"/>
-
-    <ImageView
-        android:src="@drawable/it"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:layout_weight="1"/>
-
-    <TextView
-        android:text="Location: "
-        android:layout_width="match_parent"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"
-        android:padding="10dp"
-        android:fontFamily="cursive"
-        android:background="#0000FF"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-
-    <TextView
-        android:text="Contact: +1860280-6380"
-        android:layout_width="match_parent"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"
-        android:padding="10dp"
-        android:fontFamily="cursive"
-        android:background="#0000FF"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-
-    <TextView
-        android:text="Website:"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:padding="10dp"
-        android:fontFamily="cursive"
-        android:textColor="@android:color/white"
-        android:textSize="50sp"
-        android:background="#0000FF" />
-    <TextView
-        android:text="Services:"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textColor="@android:color/white"
-        android:textSize="34sp"
-        android:padding="10dp"
-        android:fontFamily="cursive"
-        android:background="#0000FF" />
+        <TextView
+            android:text="Aguiar Solutions"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+            android:background="#0000FF"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/header"/>
+        <ImageView
+            android:src="@drawable/it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:id="@+id/logoIcon"
+            android:layout_below="@+id/header"/>
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loc40"
+            android:layout_below="@+id/logoIcon"/>
+        <TextView
+            android:text="   300 Summit St. Hartford"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:layout_toRightOf="@id/locationIcon"
+            android:layout_below="@+id/logoIcon"/>
+        <ImageView
+            android:id="@+id/phoneIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ph40"
+            android:layout_below="@+id/locationIcon"/>
+        <TextView
+            android:text="   +1 860 280 - 6380"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNum"
+            android:layout_toRightOf="@id/phoneIcon"
+            android:layout_below="@+id/address"/>
+        <ImageView
+            android:id="@+id/webIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/web"
+            android:layout_below="@+id/phoneIcon"/>
 
 
-</LinearLayout>
+
+</RelativeLayout>
