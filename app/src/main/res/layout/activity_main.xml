@@ -3,8 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     tools:context=".MainActivity">
 
         <TextView
@@ -17,20 +15,29 @@
             android:background="#0000FF"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:id="@+id/header"/>
+            android:id="@+id/header"
+            android:layout_weight="0"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
         <ImageView
             android:src="@drawable/it"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             android:id="@+id/logoIcon"
-            android:layout_below="@+id/header"/>
+            android:layout_below="@+id/header"
+            android:layout_weight="0"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
         <ImageView
             android:id="@+id/locationIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/loc40"
-            android:layout_below="@+id/logoIcon"/>
+            android:layout_below="@+id/logoIcon"
+            android:layout_weight="0"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
         <TextView
             android:text="   300 Summit St. Hartford"
             android:layout_width="match_parent"
@@ -40,13 +47,19 @@
             android:layout_height="wrap_content"
             android:id="@+id/address"
             android:layout_toRightOf="@id/locationIcon"
-            android:layout_below="@+id/logoIcon"/>
+            android:layout_below="@+id/logoIcon"
+            android:layout_weight="0"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
         <ImageView
             android:id="@+id/phoneIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ph40"
-            android:layout_below="@+id/locationIcon"/>
+            android:layout_below="@+id/locationIcon"
+            android:layout_weight="0"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
         <TextView
             android:text="   +1 860 280 - 6380"
             android:layout_width="match_parent"
@@ -56,13 +69,18 @@
             android:layout_height="wrap_content"
             android:id="@+id/phoneNum"
             android:layout_toRightOf="@id/phoneIcon"
-            android:layout_below="@+id/address"/>
+            android:layout_below="@+id/address"
+            android:layout_weight="0"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
         <ImageView
             android:id="@+id/webIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/web"
-            android:layout_below="@+id/phoneIcon"/>
+            android:layout_below="@+id/phoneIcon"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
         <TextView
             android:id="@+id/myWebsite"
             android:layout_width="wrap_content"
@@ -74,14 +92,19 @@
             android:textSize="30sp"
             android:fontFamily="cursive"
             android:layout_toRightOf="@id/webIcon"
-            android:layout_below="@+id/phoneNum"/>
+            android:layout_below="@+id/phoneNum"
+            android:layout_weight="0"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
         <ImageView
             android:id="@+id/scheduleIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/sched40"
-            android:paddingLeft="8dp"
-            android:layout_below="@+id/webIcon"/>
+            android:layout_below="@+id/webIcon"
+            android:layout_weight="0"
+            android:paddingLeft="24dp"
+            android:paddingRight="16dp"/>
         <TextView
             android:text="   Open 8AM - 4PM M - F "
             android:layout_width="match_parent"
@@ -91,9 +114,20 @@
             android:layout_height="wrap_content"
             android:id="@+id/schedule"
             android:layout_toRightOf="@id/scheduleIcon"
-            android:layout_below="@+id/myWebsite"/>
-
-
-
-
+            android:layout_below="@+id/myWebsite"
+            android:layout_weight="0"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+        <TextView
+            android:text="   Your privacy is our top priority!"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:layout_below="@+id/schedule"
+            android:layout_weight="0"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
 </RelativeLayout>

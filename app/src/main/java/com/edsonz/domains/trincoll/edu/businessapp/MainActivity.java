@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         hyperLink = (TextView) findViewById(R.id.myWebsite); //Assigns var hyperLink to TextView in XML
-        text = Html.fromHtml("<a href='https://www.android-examples.com//'>Visit our Website</a>");
+        text = Html.fromHtml("<a href='https://www.android-examples.com//'>    Visit Website</a>");
 
         hyperLink.setMovementMethod(LinkMovementMethod.getInstance());
         hyperLink.setText(text);
